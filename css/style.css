@@ -1,0 +1,333 @@
+/* Academic Website Stylesheet — Carol J. Smith */
+
+/* ---- Reset ---- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- Base ---- */
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+    background: #fff;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+}
+
+a {
+    color: #2b547e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---- Header ---- */
+header {
+    padding: 40px 0 0;
+    margin-bottom: 36px;
+}
+
+.site-name {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.site-name a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-name a:hover {
+    text-decoration: none;
+    color: #2b547e;
+}
+
+.site-affiliation {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #555;
+    margin-top: 2px;
+}
+
+nav {
+    margin-top: 16px;
+    padding: 12px 0;
+    border-top: 2px solid #1a1a1a;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+}
+
+nav a {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #2b547e;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+/* ---- Main Content ---- */
+main {
+    min-height: 50vh;
+}
+
+h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 36px 0 12px;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+h3 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 28px 0 10px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+/* ---- Homepage ---- */
+.tagline {
+    font-style: italic;
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.bio {
+    margin-bottom: 28px;
+}
+
+.distinctions {
+    margin-bottom: 28px;
+}
+
+.distinctions ul {
+    list-style: disc;
+    padding-left: 24px;
+}
+
+.distinctions li {
+    margin-bottom: 6px;
+}
+
+.profile-links {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+.profile-links ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+}
+
+/* ---- Speaking ---- */
+.talk-list {
+    list-style: none;
+    padding: 0;
+}
+
+.talk-list li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.talk-list li:last-child {
+    border-bottom: none;
+}
+
+.talk-title {
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.talk-venue {
+    color: #555;
+    font-size: 16px;
+}
+
+.talk-links {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* ---- Publications ---- */
+.pub-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pub-list li {
+    margin-bottom: 22px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #eee;
+}
+
+.pub-list li:last-child {
+    border-bottom: none;
+}
+
+.pub-title {
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.pub-title a {
+    color: #2b547e;
+}
+
+.pub-venue {
+    font-style: italic;
+}
+
+.pub-details {
+    font-size: 15px;
+    color: #555;
+}
+
+/* ---- Resources ---- */
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    margin-bottom: 14px;
+    padding-left: 0;
+}
+
+.resource-item-title {
+    font-weight: 600;
+}
+
+.resource-description {
+    font-size: 15px;
+    color: #555;
+    margin-top: 2px;
+}
+
+/* ---- Contact ---- */
+.contact-form {
+    max-width: 480px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2b547e;
+}
+
+.form-group textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.form-submit {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 28px;
+    background: #2b547e;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background: #1e3d5c;
+}
+
+/* ---- Footer ---- */
+footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid #ddd;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #888;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+        padding: 0 16px 40px;
+    }
+
+    .site-name {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 6px 16px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+}
