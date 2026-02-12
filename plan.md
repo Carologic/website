@@ -1,4 +1,5 @@
 # Academic Website Redesign Plan for carologic.com
+This plan has been completed. CJS
 
 ## Current Website Content Inventory
 
